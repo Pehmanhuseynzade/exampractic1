@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 import Servicecards from '../../components/Servicecards';
 import Boxes from '../../components/Boxes';
 import Gridd from "../../components/Gridd"
-//import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 
 function Home() {
@@ -33,12 +33,10 @@ function Home() {
 
   return (
     <>
-{/* {      <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
           <title>Home</title>
         </Helmet>
-      </div>} */}
       {/* first main */}
       <main >
         <div style={{ width: "100%" }} className='image-hero' >
