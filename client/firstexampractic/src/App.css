@@ -61,6 +61,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width:100%;
 }
 
 .servicecard {
@@ -86,6 +87,7 @@ nav {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  width:100%
 }
 
 .cardboxes {
@@ -132,5 +134,11 @@ nav {
   color: white;
 }
 .footicon:hover{
+  color: orange;
+}
+.prghov{
+  transition: .5s;
+}
+.prghov:hover{
   color: orange;
 }

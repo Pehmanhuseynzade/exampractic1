@@ -6,6 +6,8 @@ import TextField from '@mui/material/TextField';
 import Servicecards from '../../components/Servicecards';
 import Boxes from '../../components/Boxes';
 import Gridd from "../../components/Gridd"
+//import { Helmet } from "react-helmet";
+
 
 function Home() {
   const [info, setInfo] = useState([]);
@@ -31,15 +33,21 @@ function Home() {
 
   return (
     <>
+{/* {      <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home</title>
+        </Helmet>
+      </div>} */}
       {/* first main */}
-      <main style={{width:"100%"}}>
-        <div className='image-hero' >
+      <main >
+        <div style={{ width: "100%" }} className='image-hero' >
           <div style={{ color: 'white', lineHeight: "1.5", marginLeft: 200 }}>
             <p>OPENNING ON 21ST FEBRUARY, 2018</p>
             <h1 style={{ fontSize: "40px" }}>Exhibition on Modern Era</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
             <p>aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt..</p>
-            <button style={{marginTop:"15px"}} className='getstarted'>GET STARTED</button>
+            <button style={{ marginTop: "15px" }} className='getstarted'>GET STARTED</button>
           </div>
         </div>
       </main>
@@ -67,7 +75,7 @@ function Home() {
 
       {/* section 4nd numbers and info */}
 
-      <section className='info-num'>
+      <section style={{ width: "100%" }} className='info-num'>
         <div><h1>2536</h1><p>Projects Completed</p></div>
         <div><h1>6784</h1><p>Really Happy Clients</p></div>
         <div><h1>1059</h1><p>Total Tasks Completed</p></div>
@@ -82,7 +90,7 @@ function Home() {
       </div>
 
       {/* 5nd section Grid */}
-      <Gridd/>
+      <Gridd />
 
       <div className='secondtitle' >
         <h1 style={{ fontSize: "30px" }}>Some Features that Made us Unique</h1>
@@ -94,7 +102,7 @@ function Home() {
 
 
 
-      <div><TextField onChange={(event) => handleChange(event)} placeholder='Search' style={{ display:"flex",justifyContent:"center",alignItems:"center"}} id="outlined-basic" variant="outlined" /></div>
+      <div><TextField onChange={(event) => handleChange(event)} placeholder='Search' style={{ display: "flex", justifyContent: "center", alignItems: "center" }} id="outlined-basic" variant="outlined" /></div>
       <div className='card'>
         {info && info.filter((item) => {
           if (item === '') {
@@ -114,8 +122,8 @@ function Home() {
             }}
             cover={<img alt="example" src={d.ImageURL} />}
           >
-            <p style={{width:"100px",height:"30px",border:"1px solid black",backgroundColor:"black",color:"white",padding:"3px 6px"}}>{d.datee}</p>
-            <p>{d.name}</p>
+            <p style={{ width: "100px", height: "30px", border: "1px solid black", backgroundColor: "black", color: "white", padding: "3px 6px" }}>{d.datee}</p>
+            <p className='prghov'>{d.name}</p>
             <p>{d.desc}</p>
             <div style={{ display: "flex", gap: "20px" }}>
               <p><i class="fa-regular fa-heart"></i>15 Likes</p>

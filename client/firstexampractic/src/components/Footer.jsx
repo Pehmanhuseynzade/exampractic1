@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 function Footer() {
   return (
     <>
-      <footer style={{ backgroundColor: "#04091E", padding: "50px",display:"flex",gap:"60px",alignItems:"center",justifyContent:"space-between" }}>
+      <footer style={{bottom:"0", width:"100%", backgroundColor: "#04091E", padding: "50px",display:"flex",gap:"60px",alignItems:"center",justifyContent:"space-between" }}>
         <div className='foot1'>
           <h3 style={{ color: 'white' }}>About Us</h3>
           <div style={{marginTop:"20px" }} >

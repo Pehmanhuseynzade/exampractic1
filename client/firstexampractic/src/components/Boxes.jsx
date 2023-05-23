@@ -6,7 +6,7 @@ import { CardActionArea } from '@mui/material';
 function Boxes() {
     return (
         <>
-            <div className='boxes'>
+            <div  className='boxes'>
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
