@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Servicecards from '../../components/Servicecards';
 import Boxes from '../../components/Boxes';
-
+import Gridd from "../../components/Gridd"
 
 function Home() {
   const [info, setInfo] = useState([]);
@@ -32,14 +32,14 @@ function Home() {
   return (
     <>
       {/* first main */}
-      <main>
+      <main style={{width:"100%"}}>
         <div className='image-hero' >
           <div style={{ color: 'white', lineHeight: "1.5", marginLeft: 200 }}>
             <p>OPENNING ON 21ST FEBRUARY, 2018</p>
             <h1 style={{ fontSize: "40px" }}>Exhibition on Modern Era</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
             <p>aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt..</p>
-            <button className='getstarted'>GET STARTED</button>
+            <button style={{marginTop:"15px"}} className='getstarted'>GET STARTED</button>
           </div>
         </div>
       </main>
@@ -82,14 +82,19 @@ function Home() {
       </div>
 
       {/* 5nd section Grid */}
+      <Gridd/>
 
-      
+      <div className='secondtitle' >
+        <h1 style={{ fontSize: "30px" }}>Some Features that Made us Unique</h1>
+        <p style={{ color: "gray" }}>Who are in extremely love with eco friendly system.</p>
+      </div>
 
 
 
 
 
-      <div><TextField onChange={(event) => handleChange(event)} style={{ margin: "30px 40px" }} id="outlined-basic" label="Search" variant="outlined" /></div>
+
+      <div><TextField onChange={(event) => handleChange(event)} placeholder='Search' style={{ display:"flex",justifyContent:"center",alignItems:"center"}} id="outlined-basic" variant="outlined" /></div>
       <div className='card'>
         {info && info.filter((item) => {
           if (item === '') {
@@ -109,12 +114,12 @@ function Home() {
             }}
             cover={<img alt="example" src={d.ImageURL} />}
           >
+            <p style={{width:"100px",height:"30px",border:"1px solid black",backgroundColor:"black",color:"white",padding:"3px 6px"}}>{d.datee}</p>
             <p>{d.name}</p>
-            <p>{d.datee}</p>
             <p>{d.desc}</p>
-            <div style={{ display: "flex", gap: 45 }}>
-              <p>15 Likes</p>
-              <p>02 Comments</p>
+            <div style={{ display: "flex", gap: "20px" }}>
+              <p><i class="fa-regular fa-heart"></i>15 Likes</p>
+              <p><i class="fa-regular fa-comment"></i>2 Comments</p>
             </div>
             <Button onClick={() => handleClick(d._id)} style={{ margin: "5px 110px" }} variant="contained" color="error">Delete</Button>
           </Card>

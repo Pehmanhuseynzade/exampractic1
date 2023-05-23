@@ -10,8 +10,21 @@ function Boxes() {
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Expert Technicians
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-regular fa-user"></i>Expert Technicians
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+
+
+                <Card className='cardboxes' sx={{ maxWidth: 345 }}>
+                    <CardActionArea>
+                        <CardContent>
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-solid fa-newspaper"></i>Professional Service
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
@@ -23,8 +36,8 @@ function Boxes() {
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Professional Service
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-solid fa-blender-phone"></i>Great Support
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
@@ -36,21 +49,8 @@ function Boxes() {
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Great Support
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-
-
-                <Card className='cardboxes' sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Technical Skills
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-solid fa-rocket"></i>Technical Skills
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
@@ -61,8 +61,8 @@ function Boxes() {
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Highly Recomended
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>Highly Recomended
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
@@ -73,8 +73,8 @@ function Boxes() {
                 <Card className='cardboxes' sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Positive Reviews
+                            <Typography style={{display:"flex",gap:"5px"}} gutterBottom variant="h5" component="div">
+                            <i class="fa-regular fa-comment"></i>Positive Reviews
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Usage of the Internet is becoming more common due to rapid advancement of technology and power.                        </Typography>
