@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
      <>
-     <header style={{backgroundColor:"black"}}>
+     <header>
           <nav>
           <div className="nav">
           <img src="https://preview.colorlib.com/theme/security/img/logo.png.webp" alt="navimage" />

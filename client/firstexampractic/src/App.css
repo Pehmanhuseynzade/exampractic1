@@ -1,15 +1,116 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-header{
+
+header {
   position: fixed;
-  top: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.868);
+  z-index: 999;
 }
-nav{
+
+nav {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 30px;
+
+}
+
+.cards {
+  margin: 40px 80px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-hero {
+  height: 100vh;
+  background: url(https://preview.colorlib.com/theme/security/img/header-bg.jpg.webp);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  filter: brightness(0.7);
+}
+
+.getstarted {
+  width: 130px;
+  height: 35px;
+  color: white;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+
+.getstarted:hover {
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.offered {
+  text-align: center;
+  padding: 70px;
+}
+
+.servicecards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.servicecard {
+  transition: .5s;
+}
+
+.servicecard:hover {
+  background-color: orange;
+}
+
+.serviceimage {
+  padding: 10px;
+}
+
+.secondtitle {
+  text-align: center;
+  padding: 70px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardboxes {
+  transition: .5s;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px 15px;
+}
+
+.cardboxes:hover {
+  background-color: orange;
+}
+.info-num{
+  margin-top: 30px;
+  display: flex;
+  padding: 100px 130px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+.info-num h1{
+  font-size: 50px;
+}
+.info-num p{
+  font-size: 20px;
+}
+.nexttitle{
+  text-align: center;
+  padding: 70px;
 }
