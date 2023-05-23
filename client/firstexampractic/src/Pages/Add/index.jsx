@@ -6,17 +6,18 @@ import { useFormik } from "formik"
 import { InfoSchema } from '../../validation/Infovalidation';
 import { postDataByID } from '../../api/httpsrequests';
 function Add() {
-  function handleSubmit(actions, values) {
+  function handleSubmit(values,actions) {
     postDataByID(values)
     console.log(values);
-    actions.resetForm();
+    // console.log(actions);
+    // actions.resetForm();
   }
 
 
   const formik = useFormik({
     initialValues: {
       name: '',
-      age: '',
+      datee: '',
       desc: '',
       ImageURL: ''
     },
